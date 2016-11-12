@@ -14,3 +14,5 @@ npm-debug.log
 ###########################
 app/*.js
 app/*.js.map
+app/calendar/*.js
+app/calendar/*.js.map
