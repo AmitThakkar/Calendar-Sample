@@ -1,7 +1,7 @@
 {
     "name": "calendar-sample",
     "version": "1.0.0",
-    "description": "This a small example of Google Calendar View.",
+    "description": "Basic Calendar App!",
     "scripts": {
         "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
         "lite": "lite-server",
