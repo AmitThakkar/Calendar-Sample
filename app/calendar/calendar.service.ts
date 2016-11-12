@@ -46,7 +46,7 @@ export class CalendarService {
                 id: meeting.id,
                 width: MAX_WIDTH / maxConflictMeeting,
                 top: meeting.start * 2,
-                bottom: meeting.end * 2,
+                height: (meeting.end * 2) - (meeting.start * 2),
                 left: meetingsLeft[meeting.id] * MAX_WIDTH / maxConflictMeeting
             });
         });

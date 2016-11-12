@@ -1,5 +1,12 @@
+
 <div class="calendar-area">
-    <div class="meeting" *ngFor="let meeting of meetings">
+    <div class="meeting" *ngFor="let meeting of meetings"
+         [style.width.px]="meeting.width"
+         [style.height.px]="meeting.height"
+         [style.top.px]="meeting.top"
+         [style.left.px]="meeting.left"
+         [style.lineHeight.px]="meeting.height"
+    >
         {{meeting.id}}
     </div>
 </div>
