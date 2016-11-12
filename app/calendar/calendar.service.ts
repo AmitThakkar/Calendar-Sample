@@ -18,11 +18,13 @@ export class CalendarService {
             {id: 7, start: 270, end: 330},
             {id: 8, start: 190, end: 230},
             {id: 9, start: 390, end: 540},
-            {id: 10, start: 600, end: 630},
-            {id: 11, start: 630, end: 660},
+            {id: 10, start: 550, end: 610},
+            {id: 11, start: 660, end: 720},
             {id: 12, start: 510, end: 540},
             {id: 13, start: 390, end: 510},
-            {id: 14, start: 420, end: 460}
+            {id: 14, start: 420, end: 520},
+            {id: 15, start: 580, end: 620},
+            {id: 16, start: 600, end: 640}
         ];
     }
 
