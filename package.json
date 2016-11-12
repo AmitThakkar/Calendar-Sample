@@ -1,0 +1,26 @@
+{
+    "name": "calendar-sample",
+    "version": "1.0.0",
+    "description": "This a small example of Google Calendar View.",
+    "main": "index.html",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/AmitThakkar/Calendar-Sample.git"
+    },
+    "keywords": [
+        "Angular2",
+        "TypeScript",
+        "Calendar",
+        "Google",
+        "Logic"
+    ],
+    "author": "AmitThakkar",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/AmitThakkar/Calendar-Sample/issues"
+    },
+    "homepage": "https://github.com/AmitThakkar/Calendar-Sample#readme"
+}
