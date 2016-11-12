@@ -10,6 +10,7 @@ Prerequisites:
 How to Execute App locally?
 
 1. Clone the project locally from `github` via command 
+
     `git clone git@github.com:AmitThakkar/Calendar-Sample.git`  OR
     
     `git clone https://github.com/AmitThakkar/Calendar-Sample.git` OR
