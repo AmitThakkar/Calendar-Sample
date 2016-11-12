@@ -1,0 +1,9 @@
+div.calendar-area {
+    width: 600px;
+    height: 1440px;
+    background: lightblue;
+}
+
+div.meeting {
+    border: 1px solid black;
+}

@@ -1,12 +1,30 @@
 /**
  * Created by amitthakkar on 12/11/16.
  */
-let meetingPositions = (() => {
-    const MAX_WIDTH = 600;
-    return (meetings) => {
+import {Injectable} from "@angular/core";
+
+const MAX_WIDTH = 600;
+
+@Injectable()
+export class CalendarService {
+    getMeetings() {
+        return [
+            {id: 1, start: 0, end: 60},
+            {id: 2, start: 30, end: 90},
+            {id: 3, start: 120, end: 150},
+            {id: 4, start: 150, end: 210},
+            {id: 5, start: 210, end: 270},
+            {id: 6, start: 180, end: 240},
+            {id: 7, start: 270, end: 330},
+            {id: 8, start: 190, end: 230}
+        ];
+    }
+
+    getMeetingsWithPositions() {
         let meetingsWithCssAttributes = [];
         let conflicts = {};
         let meetingsLeft = {};
+        let meetings = this.getMeetings();
         meetings.forEach((meeting) => {
             let left = 0;
             for (let start = meeting.start; start < meeting.end; start++) {
@@ -33,18 +51,5 @@ let meetingPositions = (() => {
             });
         });
         return meetingsWithCssAttributes;
-    };
-})();
-
-let meetings = [
-    {id: 1, start: 0, end: 60},
-    {id: 2, start: 30, end: 90},
-    {id: 3, start: 120, end: 150},
-    {id: 4, start: 150, end: 210},
-    {id: 5, start: 210, end: 270},
-    {id: 6, start: 180, end: 240},
-    {id: 7, start: 270, end: 330},
-    {id: 8, start: 190, end: 230}
-];
-let meetingsWithCssAttributes = meetingPositions(meetings);
-console.log(meetingsWithCssAttributes);
+    }
+}
